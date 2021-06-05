@@ -7,7 +7,7 @@
 
 void update(int* cells1) {
     // cells2 represents new state of the grid
-    int* cells2 = (int*) calloc(sizeof(int), HEIGHT/CELLH*WIDTH/CELLW);
+    int* cells2 = (int*) calloc(HEIGHT/CELLH*WIDTH/CELLW, sizeof(int));
     for (int y = 0; y < HEIGHT/CELLH; y++) {
         for (int x = 0; x < WIDTH/CELLW; x++) {
             // Check if cell is alive or dead, then change state depending on neighbours
